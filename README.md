@@ -18,6 +18,7 @@ Modelar e diagramar a representação UML do componente iPhone, abrangendo suas 
 classDiagram
     class ReprodutorMusical {
         <<interface>>
+         -Musica[] musica
         +tocar()
         +pausar()
         +selecionarMusica(String musica)
@@ -25,6 +26,7 @@ classDiagram
 
     class AparelhoTelefonico {
         <<interface>>
+         -Contato[] numero
         +ligar(String numero)
         +atender()
         +iniciarCorreioVoz()
@@ -32,6 +34,7 @@ classDiagram
 
     class NavegadorInternet {
         <<interface>>
+         -URL[] url
         +exibirPagina(String url)
         +adicionarNovaAba()
         +atualizarPagina()
